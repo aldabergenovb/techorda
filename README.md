@@ -1,4 +1,4 @@
-# Название проекта
+# Techorda. Sapsan Code Lessons
 
 Techorda 2023. Sapsan Code
 
