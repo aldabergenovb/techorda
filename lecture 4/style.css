@@ -1,0 +1,11 @@
+.box {
+  width: 200px;
+  height: 200px;
+  border: 5px solid red;
+  padding: 10px;
+  margin: 20px;
+}
+
+div {
+  display: block;
+}

@@ -1,0 +1,41 @@
+/* global */
+* {
+  font-family: "Courier New", Courier, monospace;
+  color: black;
+}
+
+body {
+  background-color: lightgrey;
+}
+
+h1 {
+  color: red;
+  font-size: 30px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+h2 + p {
+  text-align: center;
+  font-size: 30px;
+}
+
+.special {
+  color: blue;
+}
+
+li.special {
+  color: white;
+}
+
+li em {
+  color: red;
+}
+
+/* обращение по id */
+#idexample {
+  font-size: 30px;
+}

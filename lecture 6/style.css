@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+.parent {
+  width: 400px;
+  height: 400px;
+  border: 1px solid black;
+}
+
+.child {
+  width: 100px;
+  height: 100px;
+  border: 1px solid blue;
+  display: inline-block;
+  margin: 10px;
+}

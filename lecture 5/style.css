@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+input[type] {
+  background-color: red;
+}
+
+input[type="text"] {
+  background-color: gray;
+  font-size: 30px;
+}
+
+/* p[class~="test"] {
+  color: red;
+} */
+
+.test,
+.test one {
+  color: blue;
+}

@@ -3,129 +3,117 @@
   <head>
     <meta charset="UTF-8" />
     <title>CV</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-      }
-
-      h1 {
-        color: #333;
-      }
-
-      h2 {
-        color: #555;
-      }
-
-      ul {
-        list-style-type: disc;
-        margin-left: 20px;
-      }
-
-      li {
-        margin-bottom: 10px;
-      }
-
-      img {
-        max-width: 200px;
-        border-radius: 50%;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+    />
   </head>
 
   <body>
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li><a href="contacts.html">Contacts</a></li>
-      </ul>
-    </nav>
-    <label for="request">Оставить заявку:</label>
-    <input type="email" name="request" />
-    <input type="submit" /> <br />
-    <br />
-    <img src="images/photo.png" alt="Ваша фотография" />
-    <h1>Балабай Алдабергенов</h1>
-    <p><strong>Контактная информация:</strong></p>
-    <p><a href="mailto:aldabergenovb@gmail.com">aldabergenovb@gmail.com</a></p>
-    <p>+7 777 522 22 89</p>
-    <p>Skype: aldabergenovb</p>
-    <p>
-      Проживает: Астана <br />
-      Гражданство: Казахстан<br />
-      Готов к переезду, готов к командировкам
-    </p>
-    <p>
-      <strong>Github</strong> <a href="url">https://github.com/aldabergenovb</a>
-    </p>
+    <div class="cv-container">
+      <div class="left-column">
+        <img src="images/photo.png" alt="Ваша фотография" />
+        <h1>Балабай Алдабергенов</h1>
+        <p><strong>Контактная информация:</strong></p>
+        <p>
+          <a href="mailto:aldabergenovb@gmail.com">aldabergenovb@gmail.com</a>
+        </p>
+        <p>+7 777 522 22 89</p>
+        <p>Skype: aldabergenovb</p>
+        <p>
+          Проживает: Астана <br />
+          Гражданство: Казахстан<br />
+          Готов к переезду, готов к командировкам
+        </p>
+        <p>
+          <strong>Github</strong>
+          <a href="https://github.com/aldabergenovb"
+            >https://github.com/aldabergenovb</a
+          >
+        </p>
+      </div>
+      <div class="right-column">
+        <h2>Профессиональный опыт</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Место работы</th>
+              <th>Должность</th>
+              <th>Период</th>
+              <th>Описание</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>IT Company</td>
+              <td>Tech Lead</td>
+              <td>2023 Февраль - настоящее время</td>
+              <td>
+                .NET core, SOAP, XML, rest api, docker, postgres, Service
+                integration with smart bridge
+              </td>
+            </tr>
+            <tr>
+              <td>IT Company</td>
+              <td>.NET Developer</td>
+              <td>2022 Январь - 2023 Февраль</td>
+              <td>.NET Framework, sap power designer, kendo ui</td>
+            </tr>
+            <tr>
+              <td>IT Company</td>
+              <td>.NET Developer</td>
+              <td>2021 Март- 2021 Ноябрь</td>
+              <td>
+                .NET core, SOAP, XML, Service integration with smart bridge
+              </td>
+            </tr>
+            <tr>
+              <td>IT Company</td>
+              <td>.NET Developer</td>
+              <td>2019 Март - 2021 Ноябрь</td>
+              <td>SOAP, XML, Service integration with smart bridge</td>
+            </tr>
+            <tr>
+              <td>IT Company</td>
+              <td>.NET Developer</td>
+              <td>2019 Январь - 2019 Ноябрь</td>
+              <td>
+                .NET Framework, Bootstrap, ChartJs, EntityFramework, MSSQL
+              </td>
+            </tr>
+            <tr>
+              <td>IT Company</td>
+              <td>.NET Developer</td>
+              <td>2016 Апрель - 2019 Январь</td>
+              <td>
+                .NET Framework, EntityFramework, MSSQL, Telerik, LINQ, Microsoft
+                Reporting Service, T-SQL
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
-    <h2>Профессиональный опыт</h2>
-    <ul>
-      <li>
-        <h3>IT Company</h3>
-        <p>Должность: Tech Lead</p>
-        <p>Период: 2023 Февраль - настоящее время</p>
-        <p>
-          Описание: .NET core, SOAP, XML, rest api, docker, postgres, Service
-          integration with smart bridge
-        </p>
-      </li>
-      <li>
-        <h3>IT Company</h3>
-        <p>Должность: .NET Developer</p>
-        <p>Период: 2022 Январь - 2023 Февраль</p>
-        <p>Описание: .NET Framework, sap power designer, kendo ui</p>
-      </li>
-      <li>
-        <h3>IT Company</h3>
-        <p>Должность: .NET Developer</p>
-        <p>Период: 2021 Март- 2021 Ноябрь</p>
-        <p>
-          Описание: .NET core, SOAP, XML, Service integration with smart bridge
-        </p>
-      </li>
-      <li>
-        <h3>IT Company</h3>
-        <p>Должность: .NET Developer</p>
-        <p>Период: 2019 Март - 2021 Ноябрь</p>
-        <p>Описание: SOAP, XML, Service integration with smart bridge</p>
-      </li>
-      <li>
-        <h3>IT Company</h3>
-        <p>Должность: .NET Developer</p>
-        <p>Период: 2019 Январь - 2019 Ноябрь</p>
-        <p>
-          Описание: .NET Framework, Bootstrap, ChartJs, EntityFramework, MSSQL
-        </p>
-      </li>
-      <li>
-        <h3>IT Company</h3>
-        <p>Должность: .NET Developer</p>
-        <p>Период: 2016 Апрель - 2019 Январь</p>
-        <p>
-          Описание: .NET Framework, EntityFramework, MSSQL, Telerik, LINQ,
-          Microsoft Reporting Service, T-SQL
-        </p>
-      </li>
-    </ul>
-
-    <h2>Образование</h2>
-    <ul>
-      <li>
-        <h3>Университет «Туран—Астана», Астана</h3>
-        <p>
-          Специальность: Информационных технологий и сервиса, Вычислительная
-          техника и программное обеспечение
-        </p>
-        <p>Год окончания: 2017</p>
-      </li>
-      <li>
-        <h3>Акмолинский Политехнический колледж</h3>
-        <p>
-          Специальность: Информационных технологий и сервиса, Вычислительная
-          техника и программное обеспечение
-        </p>
-        <p>Год окончания: 2014</p>
-      </li>
-    </ul>
+        <h2>Образование</h2>
+        <ul>
+          <li>
+            <h3>Университет «Туран—Астана», г.Астана</h3>
+            <p>
+              Специальность: Информационных технологий и сервиса, Вычислительная
+              техника и программное обеспечение
+            </p>
+            <p>Год окончания: 2017</p>
+          </li>
+          <li>
+            <h3>Политехнический колледж, г.Астана</h3>
+            <p>
+              Специальность: Информационных технологий и сервиса, Вычислительная
+              техника и программное обеспечение
+            </p>
+            <p>Год окончания: 2014</p>
+          </li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
