@@ -5,6 +5,9 @@ $bg-color: #fe36;
 
 * {
   font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -47,7 +50,7 @@ header {
     background-color: $bg-color;
     padding: 30px;
     .title {
-      margin: 10px 0;
+      margin: 0 0 10px;
       font-weight: bold;
     }
 
