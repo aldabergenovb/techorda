@@ -31,56 +31,24 @@ header .profile img {
   left: 0;
 }
 .resume .left-side {
-  flex: 20%;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
   background-color: rgba(255, 238, 51, 0.4);
-}
-.resume .left-side .contacts {
-  margin: 30px;
-}
-.resume .left-side .education {
-  margin: 30px;
-}
-.resume .left-side .section {
-  margin: 30px;
-}
-.resume .left-side .lang {
-  margin: 30px;
+  padding: 30px;
 }
 .resume .left-side .title {
+  margin: 10px 0;
   font-weight: bold;
 }
 .resume .left-side .subtitle {
   margin-left: 30px;
 }
 .resume .right-side {
-  flex: 80%;
-  margin: 30px;
-}
-.resume .right-side .table-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-.resume .right-side table {
-  width: 100%;
-  border-collapse: collapse;
-  border-spacing: 0;
-  background-color: #fff;
-  border: 1px solid #ddd;
-}
-.resume .right-side table th,
-.resume .right-side table td {
-  padding: 10px;
-  text-align: left;
-  border: 1px solid #ddd;
-}
-.resume .right-side table th {
-  background-color: #f0f0f0;
-  font-weight: bold;
-}
-.resume .right-side table tr:hover {
-  background-color: #e0e0e0;
+  flex-direction: column;
+  gap: 30px;
+  margin: 30px;
 }
 .resume .right-side .job {
   margin-bottom: 20px;
@@ -93,7 +61,7 @@ header .profile img {
   margin: 0;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
   .resume {
     flex-direction: column;
   }
