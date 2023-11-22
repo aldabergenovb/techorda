@@ -36,7 +36,7 @@ let inputCalc2 = document.getElementById("numberCalc2");
 let buttonCalc = document.getElementById("buttonCalc");
 let resultCalc = document.getElementById("resultCalc");
 buttonCalc.onclick = function () {
-  resultCalc.textContent = calc(+inputEl.value, +inputEl2.value);
+  resultCalc.textContent = calc(+inputCalc1.value, +inputCalc2.value);
 };
 
 function calc(a, b) {
