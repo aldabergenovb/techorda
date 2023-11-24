@@ -26,8 +26,8 @@ let inputEvenCheck = document.getElementById("numberEvenCheck");
 let buttonEvenCheck = document.getElementById("buttonEvenCheck");
 let resultEvenCheck = document.getElementById("resultEvenCheck");
 buttonEvenCheck.onclick = function () {
-  if (+inputEvenCheck.value % 2 === 0) resultEvenCheck.textContent = "Yes";
-  else resultEvenCheck.textContent = "No";
+  if (+inputEvenCheck.value % 2 == 0) resultEvenCheck.textContent = "Yes";
+  else resultEvenCheck.textContent = +inputEvenCheck.value + 1;
 };
 
 /* homework #4 */
