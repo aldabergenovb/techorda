@@ -3,12 +3,14 @@ let inputEl = document.getElementById("age");
 let buttonEl = document.getElementById("check");
 let resultEl = document.getElementById("result");
 let today = new Date();
-let birthDay = new Date(inputEl.value);
 buttonEl.onclick = function () {
-  debugger;
-  let age = today.getFullYear() - birthDay.getFullYear();
+  let age = today.getFullYear() - inputEl.valueAsDate.getFullYear();
   resultEl.textContent = age;
 };
+
+function isValidDate(d) {
+  return d instanceof Date && !isNaN(d);
+}
 
 /* #2 */
 let inputBred = document.getElementById("bred");
@@ -116,6 +118,11 @@ function numberToWords(number) {
   }
 }
 
-const sum = 55;
-const sumInWords = numberToWords(sum);
-console.log(`${sum} прописью: ${sumInWords}`);
+/* #4 */
+let button = document.getElementById("test");
+let inputNumber = document.getElementById("number");
+let resultNumber = document.getElementById("resultnumb");
+button.onclick = function () {
+  const sumInWords = numberToWords(+inputNumber.value);
+  resultNumber.textContent = sumInWords;
+};
