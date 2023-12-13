@@ -16,7 +16,14 @@ let res = 2;
 button2_1.onclick = function () {
   result2_1.textContent = null;
   for (let i = 1; i < +number2_1.value; i++) {
-    2 *= 2;
+    res *= 2;
     result2_1.textContent = res;
   }
 };
+
+/* interview case with google */
+let nums = [9, 3, 7];
+let tartget = 13;
+
+let test = nums.join("");
+console.log(test);
