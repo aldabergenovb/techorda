@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/techorda/react_app/myapp/static/css/main.7e035110.css",
-    "main.js": "/techorda/react_app/myapp/static/js/main.6c26dde8.js",
-    "static/js/787.1937f22b.chunk.js": "/techorda/react_app/myapp/static/js/787.1937f22b.chunk.js",
-    "index.html": "/techorda/react_app/myapp/index.html",
-    "main.7e035110.css.map": "/techorda/react_app/myapp/static/css/main.7e035110.css.map",
-    "main.6c26dde8.js.map": "/techorda/react_app/myapp/static/js/main.6c26dde8.js.map",
-    "787.1937f22b.chunk.js.map": "/techorda/react_app/myapp/static/js/787.1937f22b.chunk.js.map"
+    "main.css": "/techorda/static/css/main.7e035110.css",
+    "main.js": "/techorda/static/js/main.08363f04.js",
+    "static/js/787.1937f22b.chunk.js": "/techorda/static/js/787.1937f22b.chunk.js",
+    "index.html": "/techorda/index.html",
+    "main.7e035110.css.map": "/techorda/static/css/main.7e035110.css.map",
+    "main.08363f04.js.map": "/techorda/static/js/main.08363f04.js.map",
+    "787.1937f22b.chunk.js.map": "/techorda/static/js/787.1937f22b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7e035110.css",
-    "static/js/main.6c26dde8.js"
+    "static/js/main.08363f04.js"
   ]
 }
