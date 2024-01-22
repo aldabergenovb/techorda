@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/techorda/react_app/static/css/main.7e035110.css",
+    "main.js": "/techorda/react_app/static/js/main.01beb706.js",
+    "static/js/787.1937f22b.chunk.js": "/techorda/react_app/static/js/787.1937f22b.chunk.js",
+    "index.html": "/techorda/react_app/index.html",
+    "main.7e035110.css.map": "/techorda/react_app/static/css/main.7e035110.css.map",
+    "main.01beb706.js.map": "/techorda/react_app/static/js/main.01beb706.js.map",
+    "787.1937f22b.chunk.js.map": "/techorda/react_app/static/js/787.1937f22b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e035110.css",
+    "static/js/main.01beb706.js"
+  ]
+}
