@@ -9,19 +9,25 @@ function Menu() {
       <img className="logo" src={logo} alt="LogoSite" />
       <ul className="menu-list">
         <li className="menu-item">
-          <Link to="/">Home</Link>
+          <Link to="/">Главная</Link>
         </li>
         <li className="menu-item">
-          <Link to="/about">About us</Link>
+          <Link to="/about">О городе</Link>
         </li>
         <li className="menu-item">
-          <Link to="/users">Users</Link>
+          <Link to="/users">Пользователи</Link>
         </li>
         <li className="menu-item">
-          <Link to="/news">News</Link>
+          <Link to="/news">Новости</Link>
         </li>
         <li className="menu-item">
-          <Link to="/">Contact</Link>
+          <Link to="/smi">СМИ</Link>
+        </li>
+        <li className="menu-item">
+          <Link to="/">Контакты</Link>
+        </li>
+        <li className="menu-item">
+          <Link to="/filmlist">Список фильмов</Link>
         </li>
       </ul>
     </div>
