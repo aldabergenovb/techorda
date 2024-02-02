@@ -29,6 +29,9 @@ function Menu() {
         <li className="menu-item">
           <Link to="/filmlist">Список фильмов</Link>
         </li>
+        <li className="menu-item">
+          <Link to="/productcard">Список продуктов</Link>
+        </li>
       </ul>
     </div>
   );
