@@ -1,13 +1,29 @@
 .App {
   display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
-.App div {
-  margin: 20px;
-  padding: 20px;
-  text-align: center;
-  max-width: 400px;
+.App h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.App .ProductCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.App .ProductCard img {
+  width: 200px;
+  height: 200px;
+}
+
+.App .ProductCard h4,
+.App .ProductCard p,
+.App .ProductCard h5 {
+  margin: 5px;
 }
