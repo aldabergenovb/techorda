@@ -1,5 +1,5 @@
 import "./Container.css";
 
-export default function Container({ children }) {
-  return <div className="App">{children}</div>;
+export default function Flex({ children }) {
+  return <div className="container">{children}</div>;
 }

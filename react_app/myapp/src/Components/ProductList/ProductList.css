@@ -1,24 +1,23 @@
-.card {
+.Container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: baseline;
-  max-width: 350px;
-  border: 0;
-}
-
-.card div {
   margin: 20px;
   padding: 20px;
   text-align: center;
 }
 
-.card {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.Container div {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
 }
 
-.Category {
+.Category h1 {
   width: 100%;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .Category div {

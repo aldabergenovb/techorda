@@ -30,7 +30,7 @@ function Menu() {
           <Link to="/filmlist">Список фильмов</Link>
         </li>
         <li className="menu-item">
-          <Link to="/productcard">Список продуктов</Link>
+          <Link to="/products">Список продуктов</Link>
         </li>
       </ul>
     </div>

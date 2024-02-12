@@ -1,29 +1,25 @@
-.App {
+.container {
+  width: 100%;
+  margin: 20px;
+  padding: 20px;
+  text-align: left;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.App h1 {
+.container h1 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.App .ProductCard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-.App .ProductCard img {
+.container .ProductCard img {
   width: 200px;
   height: 200px;
 }
 
-.App .ProductCard h4,
-.App .ProductCard p,
-.App .ProductCard h5 {
+.container .ProductCard h4,
+.container .ProductCard p,
+.container .ProductCard h5 {
   margin: 5px;
 }

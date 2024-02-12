@@ -7,7 +7,7 @@ import Home from "./Components/Home/Home.js";
 import About from "./Components/About/About.js";
 import FilmList from "./Components/FilmList/FilmList.js";
 import Smi from "./Components/Smi/Smi.js";
-import ProductList from "./Components/ProductList/ProductList.js";
+import ProductPage from "./Components/ProductPage/ProductPage.js";
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
           <Route path="/smi" element={<Smi />} />
           <Route path="/contact" />
           <Route path="/filmlist" element={<FilmList />} />
-          <Route path="/productcard" element={<ProductList />} />
+          <Route path="/products" element={<ProductPage />} />
         </Routes>
       </div>
     </Router>
