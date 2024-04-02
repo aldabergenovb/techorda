@@ -1,13 +1,16 @@
 import "./App.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
 import Menu from "../src/Components/Menu/Menu.js";
-import News from "./Components/News/NewsComponent.js";
-import Users from "./Components/Users/UsersComponent.js";
-import Home from "./Components/Home/Home.js";
-import About from "./Components/About/About.js";
-import FilmList from "./Components/FilmList/FilmList.js";
-import Smi from "./Components/Smi/Smi.js";
-import ProductPage from "./Components/ProductPage/ProductPage.js";
+import FindBin from "./Pages/FindBin/FindBin.js";
+import Population from "./Pages/Population/Population.js";
+import UnemployedPopulation from "./Pages/UnemployedPopulation/UnemployedPopulation.js";
+import News from "./Pages/News/News.js";
+import DetailNews from "./Components/DetailNews/DetailNews.js";
 
 function App() {
   return (
@@ -16,14 +19,12 @@ function App() {
         <Menu />
 
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/users" element={<Users />} />
+          <Route path="/" element={<Navigate to="/news" />} />
+          <Route path="/findbin" element={<FindBin />} />
+          <Route path="/population" element={<Population />} />
+          <Route path="/unemployed-pop" element={<UnemployedPopulation />} />
           <Route path="/news" element={<News />} />
-          <Route path="/smi" element={<Smi />} />
-          <Route path="/contact" />
-          <Route path="/filmlist" element={<FilmList />} />
-          <Route path="/products" element={<ProductPage />} />
+          <Route path="/news/:id" element={<DetailNews />} />
         </Routes>
       </div>
     </Router>

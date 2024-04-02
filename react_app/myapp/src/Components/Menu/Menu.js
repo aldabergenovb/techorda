@@ -1,36 +1,28 @@
-import "./menu.scss";
+// Menu.js
+
+import "./menu.css";
 import { Link } from "react-router-dom";
+import logo from "../../assets/logo.png";
+import React from "react";
 
 function Menu() {
-  const logo =
-    "https://static.vecteezy.com/system/resources/thumbnails/024/553/534/small/lion-head-logo-mascot-wildlife-animal-illustration-generative-ai-png.png";
   return (
     <div className="menu-container">
-      <img className="logo" src={logo} alt="LogoSite" />
+      <div className="left-side">
+        <img className="logo" src={logo} alt="LogoSite" />
+      </div>
       <ul className="menu-list">
-        <li className="menu-item">
-          <Link to="/">Главная</Link>
-        </li>
-        <li className="menu-item">
-          <Link to="/about">О городе</Link>
-        </li>
-        <li className="menu-item">
-          <Link to="/users">Пользователи</Link>
-        </li>
         <li className="menu-item">
           <Link to="/news">Новости</Link>
         </li>
         <li className="menu-item">
-          <Link to="/smi">СМИ</Link>
+          <Link to="/findbin">Поиск по БИН</Link>
         </li>
         <li className="menu-item">
-          <Link to="/">Контакты</Link>
+          <Link to="/population">Численность населения</Link>
         </li>
         <li className="menu-item">
-          <Link to="/filmlist">Список фильмов</Link>
-        </li>
-        <li className="menu-item">
-          <Link to="/products">Список продуктов</Link>
+          <Link to="/unemployed-pop">Безработное население</Link>
         </li>
       </ul>
     </div>
