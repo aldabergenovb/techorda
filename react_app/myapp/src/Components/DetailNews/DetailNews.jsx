@@ -2,8 +2,11 @@ import { Col, Row } from "antd";
 import { convert } from "html-to-text";
 import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import { LanguageContext } from "../../LanguageContext";
+import { useContext } from "react";
 
 export default function DetailNews() {
+  const lang = useContext(LanguageContext);
   const { state } = useLocation();
   const navigate = useNavigate();
   const text = convert(state.description);
@@ -19,7 +22,10 @@ export default function DetailNews() {
     <div>
       <Row>
         <Col>
-          <p>Опубликовано: {new Date(state.pubDate).toLocaleString()}</p>
+          <p>
+            {lang === "ru" ? "Опубликовано" : "Жарияланды"}:
+            {new Date(state.pubDate).toLocaleString()}
+          </p>
         </Col>
       </Row>
       <Row>

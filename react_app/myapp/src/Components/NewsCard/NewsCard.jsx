@@ -2,8 +2,11 @@ import { convert } from "html-to-text";
 import "./NewsCard.css";
 import { Button, Card } from "antd";
 import { Link, useParams } from "react-router-dom";
+import { LanguageContext } from "../../LanguageContext";
+import { useContext } from "react";
 
 function NewsCard({ title, description, pubDate, imageUrl }) {
+  const lang = useContext(LanguageContext);
   const { id } = useParams();
   const text = convert(description);
   return (
@@ -11,7 +14,10 @@ function NewsCard({ title, description, pubDate, imageUrl }) {
       <Card title={title} content={text}>
         {imageUrl && <img className="test" src={imageUrl} alt={title} />}
         <p>{text}</p>
-        <p>Опубликовано: {new Date(pubDate).toLocaleString()}</p>
+        <p>
+          {lang === "ru" ? "Опубликовано" : "Жарияланды"}:
+          {new Date(pubDate).toLocaleString()}
+        </p>
         <Link
           to={`/news/${id}`}
           state={{
@@ -22,7 +28,7 @@ function NewsCard({ title, description, pubDate, imageUrl }) {
           }}
         >
           <Button type="primary" size="small">
-            Подробнее
+            {lang === "ru" ? "Подробнее" : "Толығырақ"}
           </Button>
         </Link>
       </Card>

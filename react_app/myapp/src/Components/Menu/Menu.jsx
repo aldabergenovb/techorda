@@ -24,6 +24,9 @@ function Menu() {
         <li className="menu-item">
           <Link to="/unemployed-pop">Безработное население</Link>
         </li>
+        <li className="menu-item">
+          <Link to="/login">Вход</Link>
+        </li>
       </ul>
     </div>
   );
